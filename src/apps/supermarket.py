@@ -1,8 +1,11 @@
 import os
 
+from dotenv import load_dotenv
+
 from src.core.calculator import add, divide, multiply, subtract
 
-ENV = os.environ["ENV"]
+load_dotenv()
+
 TAX_RATE = float(os.environ["TAX_RATE"])
 DISCOUNT_RATE = float(os.environ["DISCOUNT_RATE"])
 
